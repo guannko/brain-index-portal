@@ -1,39 +1,40 @@
-/* Brain Index Orange Theme Override */
+/* Brain Index Blue Theme (matching main site) */
 :root {
-  --bi-orange: #FF9500;
-  --bi-orange-hover: #E68600;
+  --bi-blue: #4A90E2;
+  --bi-blue-dark: #2E5C8A;
+  --bi-gradient-start: #5B9BD5;
+  --bi-gradient-end: #2E5C8A;
 }
 
-/* Primary green -> orange */
+/* Primary colors - green to blue */
 .btn-success,
 .bg-success,
 .badge-success,
-.text-success {
-  background-color: var(--bi-orange) !important;
-  border-color: var(--bi-orange) !important;
+.progress-bar {
+  background: linear-gradient(135deg, var(--bi-gradient-start) 0%, var(--bi-gradient-end) 100%) !important;
+  border-color: var(--bi-blue) !important;
   color: white !important;
 }
 
 .btn-success:hover {
-  background-color: var(--bi-orange-hover) !important;
+  background: var(--bi-blue-dark) !important;
 }
 
-/* Sidebar and navigation */
+.text-success {
+  color: var(--bi-blue) !important;
+}
+
+/* Sidebar */
 .sidebar {
-  background: linear-gradient(180deg, var(--bi-orange) 0%, #cc7a00 100%) !important;
+  background: linear-gradient(180deg, var(--bi-gradient-start) 0%, var(--bi-gradient-end) 100%) !important;
 }
 
 .sidebar .nav-link:hover,
 .sidebar .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-
-/* Progress bars */
-.progress-bar-success {
-  background-color: var(--bi-orange) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
 }
 
 /* Links */
 a.text-success {
-  color: var(--bi-orange) !important;
+  color: var(--bi-blue) !important;
 }
