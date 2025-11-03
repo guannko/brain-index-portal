@@ -1,0 +1,39 @@
+/* Brain Index Orange Theme Override */
+:root {
+  --bi-orange: #FF9500;
+  --bi-orange-hover: #E68600;
+}
+
+/* Primary green -> orange */
+.btn-success,
+.bg-success,
+.badge-success,
+.text-success {
+  background-color: var(--bi-orange) !important;
+  border-color: var(--bi-orange) !important;
+  color: white !important;
+}
+
+.btn-success:hover {
+  background-color: var(--bi-orange-hover) !important;
+}
+
+/* Sidebar and navigation */
+.sidebar {
+  background: linear-gradient(180deg, var(--bi-orange) 0%, #cc7a00 100%) !important;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Progress bars */
+.progress-bar-success {
+  background-color: var(--bi-orange) !important;
+}
+
+/* Links */
+a.text-success {
+  color: var(--bi-orange) !important;
+}
