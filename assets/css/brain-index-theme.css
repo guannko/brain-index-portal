@@ -1,40 +1,60 @@
-/* Brain Index Blue Theme (matching main site) */
+/* Brain Index Blue Theme - Aggressive Override */
 :root {
-  --bi-blue: #4A90E2;
-  --bi-blue-dark: #2E5C8A;
-  --bi-gradient-start: #5B9BD5;
-  --bi-gradient-end: #2E5C8A;
+  --bi-blue: #4A90E2 !important;
+  --bi-blue-dark: #2E5C8A !important;
 }
 
-/* Primary colors - green to blue */
-.btn-success,
+/* Kill ALL green colors */
+.text-success,
 .bg-success,
+.btn-success,
 .badge-success,
-.progress-bar {
-  background: linear-gradient(135deg, var(--bi-gradient-start) 0%, var(--bi-gradient-end) 100%) !important;
-  border-color: var(--bi-blue) !important;
-  color: white !important;
-}
-
-.btn-success:hover {
-  background: var(--bi-blue-dark) !important;
-}
-
-.text-success {
+.alert-success,
+.border-success,
+a.text-success {
   color: var(--bi-blue) !important;
+  background-color: var(--bi-blue) !important;
+  border-color: var(--bi-blue) !important;
 }
 
-/* Sidebar */
-.sidebar {
-  background: linear-gradient(180deg, var(--bi-gradient-start) 0%, var(--bi-gradient-end) 100%) !important;
+/* Buttons */
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: var(--bi-blue-dark) !important;
+  border-color: var(--bi-blue-dark) !important;
 }
 
-.sidebar .nav-link:hover,
-.sidebar .nav-link.active {
-  background-color: rgba(255, 255, 255, 0.15) !important;
+/* Progress bars */
+.progress-bar,
+.progress-bar-success {
+  background-color: var(--bi-blue) !important;
+}
+
+/* Charts */
+.chart .success,
+[class*="success"] {
+  color: var(--bi-blue) !important;
+  fill: var(--bi-blue) !important;
+  stroke: var(--bi-blue) !important;
 }
 
 /* Links */
-a.text-success {
+a {
   color: var(--bi-blue) !important;
+}
+
+a:hover {
+  color: var(--bi-blue-dark) !important;
+}
+
+/* Sidebar icon */
+.sidebar-brand-icon {
+  background-color: var(--bi-blue) !important;
+}
+
+/* Active menu */
+.nav-link.active {
+  color: var(--bi-blue) !important;
+  background-color: rgba(74, 144, 226, 0.1) !important;
 }
